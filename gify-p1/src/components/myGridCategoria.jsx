@@ -18,7 +18,7 @@ const GridGif = ({ category }) => {
     const getGifs = async () => {
         // Funci�n as�ncrona que se encarga de obtener los gifs desde la API de Giphy.
 
-        const url = `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${category}&limit=5&offset=0&rating=g&lang=en&bundle=messaging_non_clips`;
+        const url = `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${category}&limit=8&offset=0&rating=g&lang=en&bundle=messaging_non_clips`;
         // Construye la URL con la API key, la categor�a (query de b�squeda), y algunos par�metros adicionales como el l�mite de resultados (5), la clasificaci�n de los gifs (rating 'g'), y el idioma.
 
         const resp = await fetch(url);

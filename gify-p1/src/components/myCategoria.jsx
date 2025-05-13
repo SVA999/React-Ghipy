@@ -35,19 +35,17 @@ const AddCategory = ({ categories, setCategories }) => {
             <input
                 aria-label="Recipient's username with two button addons"
                 className="form-control"
-                placeholder="Dragon Ball"
+                placeholder="Busca tus gifs"
                 type="text"
                 value={searchValue}
                 onChange={onInputChange}
 
                 onKeyDown={(event) => {
                     if (event.key === 'Enter') {
-                        event.preventDefault(); // Evita la acción predeterminada del Enter en el input
-                        onCategorySubmit(); // Llama a la misma función del botón
+                        event.preventDefault();
+                        onCategorySubmit();
                     }
                 }}
-
-            // Input controlado: su valor est� vinculado a 'searchValue' y cada vez que el usuario escribe, 'onInputChange' actualiza el estado.
             />
 
             <button
